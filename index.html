@@ -22,6 +22,17 @@
       rel="stylesheet"
     />
 
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -248,7 +259,7 @@
       <footer class="footer grid">
         <img src="./images/logo.svg" alt="" class="logo-footer" />
 
-        <div class="flex">
+        <div class="footer-address flex">
           <img
             src="./images/icon-location.svg"
             alt=""
@@ -261,7 +272,7 @@
           </p>
         </div>
 
-        <div class="grid">
+        <div class="footer-information grid">
           <img
             src="./images/icon-phone.svg"
             alt=""
@@ -279,8 +290,8 @@
           <p>example@fylo.com</p>
         </div>
 
-        <div class="flex">
-          <ul class="footer-list">
+        <div class="footer-nav-links">
+          <ul class="footer-list flex">
             <li class="footer--list-item">About Us</li>
 
             <li class="footer--list-item">Jobs</li>
@@ -291,8 +302,8 @@
           </ul>
         </div>
 
-        <div class="flex">
-          <ul class="footer-list">
+        <div class="footer-information-links">
+          <ul class="footer-list flex">
             <li class="footer--list-item">Contact Us</li>
 
             <li class="footer--list-item">Terms</li>
@@ -301,11 +312,17 @@
           </ul>
         </div>
 
-        <div class="flex">
-          <ul class="social-list">
-            <li class="social--list-item"></li>
-            <li class="social--list-item"></li>
-            <li class="social--list-item"></li>
+        <div class="footer-social-links">
+          <ul class="social-list flex">
+            <li class="social--list-item">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </li>
+            <li class="social--list-item">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </li>
+            <li class="social--list-item">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </li>
           </ul>
         </div>
       </footer>
