@@ -14,12 +14,23 @@
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <main>
       <header class="header">
-        <nav class="main-nav">
-          <ul class="main--nav-list">
+        <nav class="main-nav flex">
+          <img src="./images/logo.svg" alt="" class="header-logo" />
+          <ul class="main--nav-list flex">
             <li class="nav-list-item">Features</li>
 
             <li class="nav-list-item">Team</li>
@@ -30,28 +41,38 @@
       </header>
 
       <section class="section-hero grid">
-        <div class="hero-illustration"></div>
+        <img
+          src="./images/illustration-intro.png"
+          alt=""
+          class="hero-illustration"
+        />
 
-        <div class="hero-content flex flex-col">
-          <div class="hero--content-textBox">
+        <div class="hero-content flex">
+          <div class="hero--content-textBox flex">
             <h1 class="heading-primary">
               All your files in one secure location, accessible anywhere.
             </h1>
 
-            <h2 class="heading-secondary">
+            <p class="hero-description">
               Fylo stores all your most important files in one secure location.
               Access them wherever you need, share and collaborate with friends
               family, and co-workers.
-            </h2>
+            </p>
           </div>
+        </div>
 
-          <a href="#section-cta" class="btn-cta">Get Started</a>
+        <div class="btn-cta">
+          <a href="#section-cta" class="btn--cta">Get Started</a>
         </div>
       </section>
 
       <section class="section-feature grid">
         <figure class="feature-illustration">
-          <img src="" alt="" class="feature--illustration-image" />
+          <img
+            src="./images/icon-access-anywhere.svg"
+            alt=""
+            class="feature--illustration-image"
+          />
 
           <figcaption class="feature-name">
             Access your files, anywhere
@@ -64,7 +85,11 @@
         </figure>
 
         <figure class="feature-illustration">
-          <img src="" alt="" class="feature--illustration-image" />
+          <img
+            src="./images/icon-security.svg"
+            alt=""
+            class="feature--illustration-image"
+          />
 
           <figcaption class="feature-name">Security you can trust</figcaption>
 
@@ -75,7 +100,11 @@
         </figure>
 
         <figure class="feature-illustration">
-          <img src="" alt="" class="feature--illustration-image" />
+          <img
+            src="./images/icon-collaboration.svg"
+            alt=""
+            class="feature--illustration-image"
+          />
 
           <figcaption class="feature-name">Real-time collaboration</figcaption>
 
@@ -86,7 +115,11 @@
         </figure>
 
         <figure class="feature-illustration">
-          <img src="" alt="" class="feature--illustration-image" />
+          <img
+            src="./images/icon-any-file.svg"
+            alt=""
+            class="feature--illustration-image"
+          />
 
           <figcaption class="feature-name">Store any type of file</figcaption>
 
@@ -100,10 +133,14 @@
 
       <section class="section-howTo grid">
         <div class="section--howTo-illustration">
-          <img src="" alt="" class="howTo-illustration" />
+          <img
+            src="./images/illustration-stay-productive.png"
+            alt=""
+            class="howTo-illustration"
+          />
         </div>
 
-        <div class="section--howTo-textBox">
+        <div class="section--howTo-textBox flex">
           <h3 class="heading-tertiary">Stay productive, wherever you are</h3>
 
           <p class="howTo-text">
@@ -116,60 +153,69 @@
             for live collaboration. No email attachments required.
           </p>
 
-          <a href="#" class="howTo-link"
-            >See how Fylo works
-            <span class="howTo--link-illustration"
-              ><img src="" alt="" class="link-illustration" /></span
-          ></a>
+          <div class="howTo-link flex">
+            <a href="#" class="howTo--link">See how Fylo works </a>
+            <img
+              src="./images/icon-arrow.svg"
+              alt=""
+              class="link-illustration"
+            />
+          </div>
         </div>
       </section>
 
       <section class="section-testimonials grid">
-        <div class="testimonial">
+        <div class="testimonial flex">
           <blockquote class="user-testimonial">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
             collaboration machine.
           </blockquote>
 
-          <div class="user-detail">
-            <img src="" alt="" class="user--picture" />
+          <div class="user-detail flex">
+            <img src="./images/profile-1.jpg" alt="" class="user--picture" />
 
-            <p class="user--name">Satish Patel</p>
+            <div class="user--detail-textBox">
+              <p class="user--name">Satish Patel</p>
 
-            <p class="user--occupation">Founder & CEO, Huddle</p>
+              <p class="user--occupation">Founder & CEO, Huddle</p>
+            </div>
           </div>
         </div>
 
-        <div class="testimonial">
+        <div class="testimonial flex">
           <blockquote class="user-testimonial">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
             collaboration machine.
           </blockquote>
 
-          <div class="user-detail">
-            <img src="" alt="" class="user--picture" />
+          <div class="user-detail flex">
+            <img src="./images/profile-2.jpg" alt="" class="user--picture" />
 
-            <p class="user--name">Bruce McKenzie</p>
+            <div class="user--detail-textBox">
+              <p class="user--name">Bruce McKenzie</p>
 
-            <p class="user--occupation">Founder & CEO, Huddle</p>
+              <p class="user--occupation">Founder & CEO, Huddle</p>
+            </div>
           </div>
         </div>
 
-        <div class="testimonial">
+        <div class="testimonial flex">
           <blockquote class="user-testimonial">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
             collaboration machine.
           </blockquote>
 
-          <div class="user-detail">
-            <img src="" alt="" class="user--picture" />
+          <div class="user-detail flex">
+            <img src="./images/profile-3.jpg" alt="" class="user--picture" />
 
-            <p class="user--name">Iva Boyd</p>
+            <div class="user--detail-textBox">
+              <p class="user--name">Iva Boyd</p>
 
-            <p class="user--occupation">Founder & CEO, Huddle</p>
+              <p class="user--occupation">Founder & CEO, Huddle</p>
+            </div>
           </div>
         </div>
       </section>
@@ -185,7 +231,13 @@
           </p>
 
           <form action="" class="cta-form flex">
-            <input type="email" name="" id="" />
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="email@example.com"
+              class="email-input"
+            />
             <button type="submit" class="submit-btn">
               Get Started For Free
             </button>
@@ -194,10 +246,14 @@
       </section>
 
       <footer class="footer grid">
-        <img src="" alt="" class="logo-footer" />
+        <img src="./images/logo.svg" alt="" class="logo-footer" />
 
         <div class="flex">
-          <img src="" alt="" class="address-illustration" />
+          <img
+            src="./images/icon-location.svg"
+            alt=""
+            class="address-illustration"
+          />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -206,11 +262,19 @@
         </div>
 
         <div class="grid">
-          <img src="" alt="" class="phone-illustration" />
+          <img
+            src="./images/icon-phone.svg"
+            alt=""
+            class="phone-illustration"
+          />
 
           <p>+1-543-123-4567</p>
 
-          <img src="" alt="" class="email-illustration" />
+          <img
+            src="./images/icon-email.svg"
+            alt=""
+            class="email-illustration"
+          />
 
           <p>example@fylo.com</p>
         </div>

@@ -13,3 +13,253 @@
   --fw-regular: 400;
   --fw-bold: 700;
 }
+
+html {
+  font-size: 50%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: var(--fw-bold);
+  font-family: "Raleway", sans-serif;
+}
+
+.heading-primary {
+  font-size: 2.75rem;
+}
+
+.heading-tertiary {
+  font-size: 2.25rem;
+}
+
+/* HEADER */
+.header {
+  background-color: hsl(218, 28%, 13%);
+  padding: 2.4rem;
+}
+
+/* NAVIGATION */
+.main-nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: 2rem;
+}
+
+.main--nav-list {
+  list-style: none;
+  color: var(--neutral-white);
+  gap: 2.4rem;
+}
+
+/* HERO SECTION */
+.section-hero {
+  padding: 2.4rem 5.2rem 5.2rem 5.2rem;
+  row-gap: 2rem;
+  justify-content: center;
+  background-color: hsl(218, 28%, 13%);
+}
+
+.hero-content {
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.hero-illustration {
+  width: 100%;
+}
+
+.hero--content-textBox {
+  flex-direction: column;
+  gap: 2.4rem;
+  text-align: center;
+  color: var(--neutral-white);
+}
+
+.hero-description {
+  font-size: 1.75rem;
+}
+
+.btn-cta {
+  padding: 2rem;
+  justify-self: center;
+}
+
+.btn--cta:link,
+.btn--cta:visited {
+  font-size: 1.75rem;
+  text-decoration: none;
+  padding: 1.2rem 9.6rem;
+  color: var(--neutral-white);
+  background-color: var(--accent-blue);
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.btn--cta:hover,
+.btn--cta:active {
+  background-color: var(--accent-cyan);
+}
+
+/* FEATURE SECTION */
+.section-feature {
+  padding: 6.4rem 3.6rem;
+  color: var(--neutral-white);
+  background-color: var(--primary-dark-blue-main-bg);
+  row-gap: 5.2rem;
+  text-align: center;
+}
+
+.feature--illustration-image {
+  width: 20%;
+  margin-bottom: 2.4rem;
+}
+
+.feature-name {
+  font-weight: var(--fw-bold);
+  font-size: 1.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.feature-description {
+  font-size: 1.75rem;
+}
+
+/* SECTION HOW-TO */
+.section-howTo {
+  padding: 6.4rem 3.6rem;
+  color: var(--neutral-white);
+  background-color: var(--primary-dark-blue-main-bg);
+}
+
+.howTo-illustration {
+  width: 100%;
+}
+
+.section--howTo-textBox {
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.howTo-text {
+  font-size: 1.75rem;
+}
+
+.howTo-link {
+  width: max-content;
+  gap: 0.4rem;
+  align-items: center;
+  border-bottom: 1px solid var(--accent-cyan);
+}
+
+.howTo--link:link,
+.howTo--link:visited {
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: var(--accent-cyan);
+}
+
+/* SECTION TESTIMONIALS */
+.section-testimonials {
+  padding: 6.4rem 3.6rem;
+  row-gap: 2.4rem;
+  color: var(--neutral-white);
+  background-color: var(--primary-dark-blue-main-bg);
+}
+
+.testimonial {
+  flex-direction: column;
+  padding: 2.4rem;
+  gap: 1.2rem;
+  background-color: var(--primary-dark-blue-testi-bg);
+}
+
+.user-testimonial {
+  font-size: 1.5rem;
+  font-weight: var(--fw-regular);
+}
+
+.user-detail {
+  gap: 1.4rem;
+}
+
+.user--picture {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.user--name {
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1rem;
+}
+
+.user--occupation {
+  letter-spacing: 0.1rem;
+}
+
+/* SECTION CTA */
+.section-cta {
+  padding: 6.4rem 5.2rem;
+  color: var(--neutral-white);
+  background-color: var(--primary-dark-blue-main-bg);
+}
+
+.section--cta-content {
+  padding: 4.8rem;
+  justify-content: center;
+  text-align: center;
+  row-gap: 2.4rem;
+  border-radius: 5px;
+  background-color: var(--primary-dark-blue-testi-bg);
+
+  /* transform: translateY(50%); */
+}
+
+.cta-form {
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.email-input {
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 25px;
+}
+
+.submit-btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  border: none;
+  padding: 1.2rem 2rem;
+  border-radius: 25px;
+  color: var(--neutral-white);
+  background-color: var(--accent-blue);
+}
+
+/* FOOTER */
+.footer {
+  color: var(--neutral-white);
+  background-color: var(--primary-dark-blue-footer-bg);
+}
