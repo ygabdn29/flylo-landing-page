@@ -53,7 +53,8 @@ body {
 
 /* HEADER */
 .header {
-  background-color: hsl(218, 28%, 13%);
+  background-color: var(--primary-dark-blue-testi-bg);
+
   padding: 2.4rem;
 }
 
@@ -78,7 +79,18 @@ body {
   padding: 2.4rem 5.2rem 5.2rem 5.2rem;
   row-gap: 2rem;
   justify-content: center;
-  background-color: hsl(218, 28%, 13%);
+  /* background-color: var(--primary-dark-blue-testi-bg); */
+  background-image: url("./images/bg-curvy-mobile.svg"),
+    linear-gradient(
+      to bottom,
+      var(--primary-dark-blue-testi-bg),
+      var(--primary-dark-blue-testi-bg),
+      var(--primary-dark-blue-main-bg),
+      var(--primary-dark-blue-main-bg)
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .hero-content {
@@ -188,6 +200,19 @@ body {
   background-color: var(--primary-dark-blue-main-bg);
 }
 
+.quotes {
+  position: absolute;
+  width: 3rem;
+  left: 2%;
+  top: -10%;
+  z-index: -1;
+}
+
+.testimonial-quotes {
+  position: relative;
+  z-index: 3;
+}
+
 .testimonial {
   flex-direction: column;
   padding: 2.4rem;
@@ -223,6 +248,8 @@ body {
   padding: 6.4rem 5.2rem;
   color: var(--neutral-white);
   background-color: var(--primary-dark-blue-main-bg);
+
+  position: relative;
 }
 
 .section--cta-content {
@@ -233,7 +260,11 @@ body {
   border-radius: 5px;
   background-color: var(--primary-dark-blue-testi-bg);
 
-  /* transform: translateY(50%); */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
 
 .cta-form {
@@ -266,22 +297,49 @@ body {
   background-color: var(--primary-dark-blue-footer-bg);
 }
 
-.footer-address {
-  gap: 2.4rem;
+.logo-footer {
+  margin-top: 20rem;
+  width: 15rem;
 }
 
 .footer-information {
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 1.2rem;
-  align-items: center;
+  gap: 2rem;
+  font-size: 1.75rem;
+}
+
+.footer-address-phone {
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.information-icon {
+  height: auto;
+  width: 2rem;
 }
 
 .footer-list {
+  font-size: 1.75rem;
+
   flex-direction: column;
   gap: 1.2rem;
   list-style: none;
 }
 
+.footer-nav-links {
+  margin-bottom: 3rem;
+}
+
+.footer-information-links {
+  margin-bottom: 3rem;
+}
+
+.footer-social-links {
+  justify-self: center;
+}
+
 .social-list {
+  font-size: 1.75rem;
   list-style: none;
+  gap: 1.2rem;
 }

@@ -176,20 +176,24 @@
       </section>
 
       <section class="section-testimonials grid">
-        <div class="testimonial flex">
-          <blockquote class="user-testimonial">
-            Fylo has improved our team productivity by an order of magnitude.
-            Since making the switch our team has become a well-oiled
-            collaboration machine.
-          </blockquote>
+        <div class="testimonial-quotes">
+          <img src="./images/bg-quotes.png" alt="" class="quotes" />
 
-          <div class="user-detail flex">
-            <img src="./images/profile-1.jpg" alt="" class="user--picture" />
+          <div class="testimonial flex">
+            <blockquote class="user-testimonial">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </blockquote>
 
-            <div class="user--detail-textBox">
-              <p class="user--name">Satish Patel</p>
+            <div class="user-detail flex">
+              <img src="./images/profile-1.jpg" alt="" class="user--picture" />
 
-              <p class="user--occupation">Founder & CEO, Huddle</p>
+              <div class="user--detail-textBox">
+                <p class="user--name">Satish Patel</p>
+
+                <p class="user--occupation">Founder & CEO, Huddle</p>
+              </div>
             </div>
           </div>
         </div>
@@ -259,35 +263,39 @@
       <footer class="footer grid">
         <img src="./images/logo.svg" alt="" class="logo-footer" />
 
-        <div class="footer-address flex">
+        <div class="footer-information flex">
           <img
             src="./images/icon-location.svg"
             alt=""
-            class="address-illustration"
+            class="information-icon"
           />
 
-          <p>
+          <p class="address-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
 
-        <div class="footer-information grid">
-          <img
-            src="./images/icon-phone.svg"
-            alt=""
-            class="phone-illustration"
-          />
+        <div class="footer-address-phone flex">
+          <div class="footer-information flex">
+            <img
+              src="./images/icon-phone.svg"
+              alt=""
+              class="information-icon"
+            />
 
-          <p>+1-543-123-4567</p>
+            <p class="phone-number">+1-543-123-4567</p>
+          </div>
 
-          <img
-            src="./images/icon-email.svg"
-            alt=""
-            class="email-illustration"
-          />
+          <div class="footer-information flex">
+            <img
+              src="./images/icon-email.svg"
+              alt=""
+              class="information-icon"
+            />
 
-          <p>example@fylo.com</p>
+            <p class="email-text">example@fylo.com</p>
+          </div>
         </div>
 
         <div class="footer-nav-links">
@@ -317,9 +325,11 @@
             <li class="social--list-item">
               <ion-icon name="logo-facebook"></ion-icon>
             </li>
+
             <li class="social--list-item">
               <ion-icon name="logo-twitter"></ion-icon>
             </li>
+
             <li class="social--list-item">
               <ion-icon name="logo-instagram"></ion-icon>
             </li>
