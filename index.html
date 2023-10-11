@@ -34,19 +34,28 @@
     ></script>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <script defer src="./script.js"></script>
   </head>
 
   <body>
     <main>
       <header class="header">
         <nav class="main-nav flex">
-          <img src="./images/logo.svg" alt="" class="header-logo" />
+          <img src="./images/logo.svg" alt="Fylo Logo" class="header-logo" />
           <ul class="main--nav-list flex">
-            <li class="nav-list-item">Features</li>
+            <li class="nav-list-item">
+              <a href="" class="main-nav-link">Features</a>
+            </li>
 
-            <li class="nav-list-item">Team</li>
+            <li class="nav-list-item">
+              <a href="" class="main-nav-link">Team</a>
+            </li>
 
-            <li class="nav-list-item">Sign In</li>
+            <li class="nav-list-item">
+              <a href="" class="main-nav-link">Sign In</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -54,7 +63,7 @@
       <section class="section-hero grid">
         <img
           src="./images/illustration-intro.png"
-          alt=""
+          alt="Illustration for Introduction Section"
           class="hero-illustration"
         />
 
@@ -81,7 +90,7 @@
         <figure class="feature-illustration">
           <img
             src="./images/icon-access-anywhere.svg"
-            alt=""
+            alt="Illustration for Fylo Feature"
             class="feature--illustration-image"
           />
 
@@ -98,7 +107,7 @@
         <figure class="feature-illustration">
           <img
             src="./images/icon-security.svg"
-            alt=""
+            alt="Illustration for Fylo Feature"
             class="feature--illustration-image"
           />
 
@@ -113,7 +122,7 @@
         <figure class="feature-illustration">
           <img
             src="./images/icon-collaboration.svg"
-            alt=""
+            alt="Illustration for Fylo Feature"
             class="feature--illustration-image"
           />
 
@@ -128,7 +137,7 @@
         <figure class="feature-illustration">
           <img
             src="./images/icon-any-file.svg"
-            alt=""
+            alt="Illustration for Fylo Feature"
             class="feature--illustration-image"
           />
 
@@ -146,7 +155,7 @@
         <div class="section--howTo-illustration">
           <img
             src="./images/illustration-stay-productive.png"
-            alt=""
+            alt="Illustration for Fylo Feature"
             class="howTo-illustration"
           />
         </div>
@@ -168,7 +177,7 @@
             <a href="#" class="howTo--link">See how Fylo works </a>
             <img
               src="./images/icon-arrow.svg"
-              alt=""
+              alt="Illustration of an arrow"
               class="link-illustration"
             />
           </div>
@@ -177,7 +186,11 @@
 
       <section class="section-testimonials grid">
         <div class="testimonial-quotes">
-          <img src="./images/bg-quotes.png" alt="" class="quotes" />
+          <img
+            src="./images/bg-quotes.png"
+            alt="Illustration of quotation mark"
+            class="quotes"
+          />
 
           <div class="testimonial flex">
             <blockquote class="user-testimonial">
@@ -187,7 +200,11 @@
             </blockquote>
 
             <div class="user-detail flex">
-              <img src="./images/profile-1.jpg" alt="" class="user--picture" />
+              <img
+                src="./images/profile-1.jpg"
+                alt="Picture of Satish Patel"
+                class="user--picture"
+              />
 
               <div class="user--detail-textBox">
                 <p class="user--name">Satish Patel</p>
@@ -206,7 +223,11 @@
           </blockquote>
 
           <div class="user-detail flex">
-            <img src="./images/profile-2.jpg" alt="" class="user--picture" />
+            <img
+              src="./images/profile-2.jpg"
+              alt="Picture of Bruce McKenzie"
+              class="user--picture"
+            />
 
             <div class="user--detail-textBox">
               <p class="user--name">Bruce McKenzie</p>
@@ -224,7 +245,11 @@
           </blockquote>
 
           <div class="user-detail flex">
-            <img src="./images/profile-3.jpg" alt="" class="user--picture" />
+            <img
+              src="./images/profile-3.jpg"
+              alt="Picture of Iva Boyd"
+              class="user--picture"
+            />
 
             <div class="user--detail-textBox">
               <p class="user--name">Iva Boyd</p>
@@ -245,7 +270,7 @@
             would be happy to help you.
           </p>
 
-          <form action="" class="cta-form flex">
+          <form action="" method="get" class="cta-form flex">
             <input
               type="email"
               name="email"
@@ -257,17 +282,18 @@
               Get Started For Free
             </button>
           </form>
+          <p class="error-text">Please enter a valid email address</p>
         </div>
       </section>
 
       <footer class="footer grid">
-        <img src="./images/logo.svg" alt="" class="logo-footer" />
+        <img src="./images/logo.svg" alt="Fylo Logo" class="logo-footer" />
 
         <div class="footer-information flex">
           <img
             src="./images/icon-location.svg"
-            alt=""
-            class="information-icon"
+            alt="Illustration for location mark"
+            class="information-location-icon"
           />
 
           <p class="address-text">
@@ -276,21 +302,21 @@
           </p>
         </div>
 
-        <div class="footer-address-phone flex">
-          <div class="footer-information flex">
+        <div class="footer-email-phone flex">
+          <div class="footer-phone-information flex">
             <img
               src="./images/icon-phone.svg"
-              alt=""
+              alt="Illustration of phone"
               class="information-icon"
             />
 
             <p class="phone-number">+1-543-123-4567</p>
           </div>
 
-          <div class="footer-information flex">
+          <div class="footer-email-information flex">
             <img
               src="./images/icon-email.svg"
-              alt=""
+              alt="Illustration of email"
               class="information-icon"
             />
 
@@ -300,38 +326,58 @@
 
         <div class="footer-nav-links">
           <ul class="footer-list flex">
-            <li class="footer--list-item">About Us</li>
+            <li class="footer--list-item">
+              <a href="#" class="footer--link">About Us</a>
+            </li>
 
-            <li class="footer--list-item">Jobs</li>
+            <li class="footer--list-item">
+              <a href="#" class="footer--link">Jobs</a>
+            </li>
 
-            <li class="footer--list-item">Press</li>
+            <li class="footer--list-item">
+              <a href="#" class="footer--link">Press</a>
+            </li>
 
-            <li class="footer--list-item">Blog</li>
+            <li class="footer--list-item">
+              <a href="#" class="footer--link">Blog</a>
+            </li>
           </ul>
         </div>
 
         <div class="footer-information-links">
           <ul class="footer-list flex">
-            <li class="footer--list-item">Contact Us</li>
+            <li class="footer--list-item">
+              <a href="#" class="footer--link">Contact Us</a>
+            </li>
 
-            <li class="footer--list-item">Terms</li>
+            <li class="footer--list-item">
+              <a href="#" class="footer--link">Terms</a>
+            </li>
 
-            <li class="footer--list-item">Privacy</li>
+            <li class="footer--list-item">
+              <a href="#" class="footer--link">Privacy</a>
+            </li>
           </ul>
         </div>
 
         <div class="footer-social-links">
           <ul class="social-list flex">
             <li class="social--list-item">
-              <ion-icon name="logo-facebook"></ion-icon>
+              <a href="#" class="social-link"
+                ><ion-icon name="logo-facebook" class="social-icon"></ion-icon
+              ></a>
             </li>
 
             <li class="social--list-item">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <a href="#" class="social-link"
+                ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+              ></a>
             </li>
 
             <li class="social--list-item">
-              <ion-icon name="logo-instagram"></ion-icon>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram" class="social-icon"></ion-icon
+              ></a>
             </li>
           </ul>
         </div>
