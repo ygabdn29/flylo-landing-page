@@ -175,11 +175,46 @@
 
           <div class="howTo-link flex">
             <a href="#" class="howTo--link">See how Fylo works </a>
-            <img
-              src="./images/icon-arrow.svg"
-              alt="Illustration of an arrow"
-              class="link-illustration"
-            />
+            <svg
+              width="16"
+              height="16"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs>
+                <circle id="b" cx="6" cy="6" r="6" />
+                <filter
+                  x="-25%"
+                  y="-25%"
+                  width="150%"
+                  height="150%"
+                  filterUnits="objectBoundingBox"
+                  id="a"
+                >
+                  <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                  <feGaussianBlur
+                    stdDeviation="1"
+                    in="shadowOffsetOuter1"
+                    result="shadowBlurOuter1"
+                  />
+                  <feColorMatrix
+                    values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0"
+                    in="shadowBlurOuter1"
+                  />
+                </filter>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <g transform="translate(2 2)">
+                  <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                  <use fill="#62E0D9" xlink:href="#b" />
+                </g>
+                <path
+                  d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                  fill="#1B2330"
+                  class="link-illustration"
+                />
+              </g>
+            </svg>
           </div>
         </div>
       </section>
@@ -384,13 +419,13 @@
       </footer>
     </main>
 
-    <!-- <div>
+    <div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Yoga Budiman</a>.
+        >. Coded by <a href="https://github.com/ygabdn29">Yoga Budiman</a>.
       </p>
-    </div> -->
+    </div>
   </body>
 </html>

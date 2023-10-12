@@ -203,6 +203,12 @@ body {
   gap: 0.4rem;
   align-items: center;
   border-bottom: 1px solid var(--accent-cyan);
+  transition: all 0.3s;
+}
+
+.howTo-link:hover {
+  fill: var(--neutral-white);
+  border-bottom: 1px solid var(--neutral-white);
 }
 
 .howTo--link:link,
@@ -210,6 +216,12 @@ body {
   font-size: 1.75rem;
   text-decoration: none;
   color: var(--accent-cyan);
+  transition: all 0.3s;
+}
+
+.howTo--link:hover,
+.howTo--link:active {
+  color: var(--neutral-white);
 }
 
 /* SECTION TESTIMONIALS */
@@ -280,7 +292,7 @@ body {
   row-gap: 2.4rem;
   border-radius: 5px;
   background-color: var(--primary-dark-blue-testi-bg);
-  box-shadow: 0 0.5rem 0.5rem black;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 
   position: absolute;
   top: 100%;
@@ -375,14 +387,14 @@ body {
 }
 
 .footer--link:link,
-.footer-link:visited {
+.footer--link:visited {
   text-decoration: none;
   color: var(--neutral-white);
   transition: all 0.3;
 }
 
 .footer--link:hover,
-.footer-link:active {
+.footer--link:active {
   font-weight: var(--fw-bold);
 }
 
@@ -413,4 +425,8 @@ body {
 .social-link:hover,
 .social-link:active {
   color: var(--accent-cyan);
+}
+
+.attribution {
+  text-align: center;
 }
